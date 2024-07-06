@@ -9,6 +9,12 @@
 - Signup Form
 - form vlidation
 - useRef Hook 
+- firebase setup
+- Deploy app to production
+- Create Signup User Acount 
+- Authentication
+- Created redux Store with userSlice
+- 
 
 
 
