@@ -10,6 +10,7 @@ import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 import { BG_URL, USER_AVATAR } from "../utils/constants";
+import Layout1 from "../layout/Layout1";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -81,11 +82,7 @@ const Login = () => {
     setIsSignInForm(!isSignInForm);
   };
   return (
-    <div>
-      <Header />
-      <div className="absolute">
-        <img className="h-screen object-cover" src={BG_URL} alt="logo" />
-      </div>
+    <Layout1>
       <form
         onSubmit={(e) => e.preventDefault()}
         className="w-full md:w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80"
@@ -127,7 +124,7 @@ const Login = () => {
             : "Already registered? Sign In Now."}
         </p>
       </form>
-    </div>
+    </Layout1>
   );
 };
 export default Login;
